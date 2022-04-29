@@ -1,11 +1,11 @@
 ![java 11 image](https://img.shields.io/badge/java-11-red)
 ![retrofit2 image](https://img.shields.io/badge/dependencies-retrofit2-green)
-#Wrapper for CheapShark API
+# Wrapper for CheapShark API
 
-##Documentation
+## Documentation
 Official documentation https://apidocs.cheapshark.com
 
-##Quick start
+## Quick start
 - Follow instruction for adding dependency  
 [https://jitpack.io/#M1keM1ke/cheap-shark-api-wrapper](https://jitpack.io/#M1keM1ke/cheap-shark-api-wrapper)
 

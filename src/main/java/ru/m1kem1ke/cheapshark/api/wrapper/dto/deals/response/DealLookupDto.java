@@ -3,9 +3,9 @@ package ru.m1kem1ke.cheapshark.api.wrapper.dto.deals.response;
 import java.util.List;
 
 public class DealLookupDto {
-    public GameInfoDto gameInfo;
-    public List<Object> cheaperStores;
-    public CheapestPriceDto cheapestPrice;
+    private GameInfoDto gameInfo;
+    private List<CheaperStoreDto> cheaperStores;
+    private CheapestPriceDto cheapestPrice;
 
     public GameInfoDto getGameInfo() {
         return gameInfo;
@@ -15,11 +15,11 @@ public class DealLookupDto {
         this.gameInfo = gameInfo;
     }
 
-    public List<Object> getCheaperStores() {
+    public List<CheaperStoreDto> getCheaperStores() {
         return cheaperStores;
     }
 
-    public void setCheaperStores(List<Object> cheaperStores) {
+    public void setCheaperStores(List<CheaperStoreDto> cheaperStores) {
         this.cheaperStores = cheaperStores;
     }
 

@@ -1,10 +1,10 @@
 package ru.m1kem1ke.cheapshark.api.wrapper.dto.games.request;
 
 public class ListOfGamesRequestDto {
-    String title;
-    String steamAppID;
-    String limit;
-    String exact;
+    private String title;
+    private String steamAppID;
+    private String limit;
+    private String exact;
 
     public ListOfGamesRequestDto() {}
 

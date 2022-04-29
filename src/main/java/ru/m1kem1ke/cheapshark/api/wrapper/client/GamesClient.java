@@ -1,9 +1,9 @@
 package ru.m1kem1ke.cheapshark.api.wrapper.client;
 
-import retrofit2.http.Body;
+import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
-import ru.m1kem1ke.cheapshark.api.wrapper.dto.games.request.ListOfGamesRequestDto;
+import retrofit2.http.QueryMap;
 import ru.m1kem1ke.cheapshark.api.wrapper.dto.games.response.GameLookupDto;
 import ru.m1kem1ke.cheapshark.api.wrapper.dto.games.response.ListOfGamesDto;
 
@@ -14,11 +14,11 @@ public interface GamesClient {
     String BASE_PATH = "games";
 
     @GET(BASE_PATH)
-    List<ListOfGamesDto> listOfGames(@Body ListOfGamesRequestDto request);
+    Call<List<ListOfGamesDto>> listOfGames(@QueryMap Map<String, String> request);
 
     @GET(BASE_PATH)
-    GameLookupDto gameLookup(@Query("id") String id);
+    Call<GameLookupDto> gameLookup(@Query("id") String id);
 
     @GET(BASE_PATH)
-    Map<String, GameLookupDto> multipleGameLookup(@Query("ids") String ids);
+    Call<Map<String, GameLookupDto>> multipleGameLookup(@Query("ids") String ids);
 }

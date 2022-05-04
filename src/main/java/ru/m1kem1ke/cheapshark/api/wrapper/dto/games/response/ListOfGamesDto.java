@@ -6,6 +6,7 @@ public class ListOfGamesDto {
     private String cheapest;
     private String cheapestDealID;
     private String external;
+    private String internalName;
     private String thumb;
 
     public String getGameID() {
@@ -46,6 +47,14 @@ public class ListOfGamesDto {
 
     public void setExternal(String external) {
         this.external = external;
+    }
+
+    public String getInternalName() {
+        return internalName;
+    }
+
+    public void setInternalName(String internalName) {
+        this.internalName = internalName;
     }
 
     public String getThumb() {
